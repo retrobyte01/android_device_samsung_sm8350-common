@@ -1,0 +1,8 @@
+cc_library_shared {
+    name: "libsensorndkbridge_shim",
+    header_libs: ["libbase_headers"],
+    shared_libs: ["libsensorndkbridge", "libutils"],
+    include_dirs: ["frameworks/hardware/interfaces/sensorservice/libsensorndkbridge"],
+    srcs: ["ALooper.cpp"],
+    vendor: true,
+}
